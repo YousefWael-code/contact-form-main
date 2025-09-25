@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <h1>Contact Us</h1>
+
+    <form action="" class="theform" method="get">
+
+      <div class="names">
+
+        <div class="firstname">
+
+          <label for="firstname">First Name</label>
+          <br>
+          <input type="text" id="firstname">
+          <h5>This field is required</h5>
+
+        </div>
+
+        <div class="lastname">
+
+          <label for="lastname">Last Name</label>
+          <br>
+          <input type="text" id="lastname">
+          <h5>This field is required</h5>
+
+        </div>
+
+      </div>
+
+      <label for="emailaddress">Email Address</label>
+      <input type="text" id="emailaddress">
+      <h5>Please enter a valid email address</h5>
+      
+      Query Type
+      
+      <div class="querytype">
+        <div class="generalenquiry">
+          <input type="radio" id="generalenquiry" name="radios">
+          <label for="generalenquiry">General Enquiry</label>
+        </div>
+
+        <div class="supportrequest">
+          <input type="radio" id="supportrequest" name="radios">
+          <label for="supportrequest">Support Request</label>
+        </div>
+      </div>
+      <h5>Please select a query type</h5>
+      
+      <label for="message">Message</label>
+      <!-- <input type="text" name="" id="message"> -->
+      <textarea id="message" rows="3"></textarea>
+      <h5>This field is required</h5>
+            
+      <div class="checkbox">
+        <input type="checkbox" id="checkboxes">
+        <label for="checkboxes">I consent to being contacted by the team</label>
+      </div>
+      <h5>To submit this form, please consent to being contacted</h5>
+
+      <button class="submit">Submit</button>
+
+    </form>
+
+    <div class="thankyou">
+
+      <div class="title">
+
+        <img src="./assets/images/icon-success-check.svg" alt="">
+
+        <h4>Message Sent!</h4>
+
+      </div>
+
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+
+    </div>
+
+  </div>
+  
+  <script src="script.js"></script>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

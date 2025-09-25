@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%); 
+    --grey500: hsl(186, 15%, 59%); 
+    --grey900: hsl(187, 24%, 22%);
+    --green200: hsl(148, 38%, 91%);
+    --green600: hsl(169, 82%, 27%);
+    --red: hsl(0, 66%, 54%);
+}
+
+html, body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green200);
+    width: 100vw;
+    height: 100vh;
+    margin: 2rem 1rem;
+}
+
+.card {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 40rem;
+}
+
+.firstname, .lastname {
+    display: inline-block;
+    width: 100%;
+}
+
+#firstname, #lastname {
+    margin-bottom: 0.5rem;
+}
+
+.generalenquiry, .supportrequest {
+    display: inline-flex;
+    gap: 1rem;
+    width: 100%;
+    border: 0.01rem solid var(--grey500);
+    border-radius: 0.5rem;
+    padding: 0.7rem 1.5rem;
+}
+
+.querytype {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    margin: 0.8rem 0rem 0.5rem;
+}
+
+.names {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0rem 0rem;
+    width: 100%;
+}
+
+#emailaddress {
+    margin-bottom: 0.5rem;
+}
+
+form input[type="text"] {
+    margin-top: 0.6rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 0.01rem solid var(--grey500);
+}
+
+form input[type="text"]:hover {
+    cursor: pointer;
+    border: 0.01rem solid var(--green600);
+    transition: 0.2s;
+}
+
+#message {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    min-height: 4.5rem;
+    width: 100%;
+    overflow-y: auto;
+    resize: none;
+    padding: 0.5rem 1rem 0rem;
+}
+
+.checkbox {
+    margin: 2rem 0rem 0.5rem;
+}
+
+#checkboxes {
+    margin-right: 1rem;
+}
+
+.submit {
+    padding: 1rem;
+    width: 100%;
+    letter-spacing: 0.1rem;
+    color: var(--white);
+    background-color: var(--green600);
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+.submit:hover {
+    background-color: var(--grey900);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.thankyou {
+    position: absolute;
+    text-align: flex-start;
+    padding: 1rem 1rem 1.5rem;
+    border-radius: 0.5rem;
+    color: var(--white);
+    background-color: var(--grey900);
+    left: 40.5%;
+    bottom: 87%;
+    display: none;
+    transition: 0.2s;
+}
+
+.thankyou p {
+    font-size: 8pt;
+}
+
+.title {
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    margin-top: 0rem;
+}
+
+.title h4 {
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 10pt;
+    font-weight: 500;
+    margin: 0rem 0rem 1.5rem 0rem;
+    color: var(--red);
+    display: none;
+    transition: 0.2s;
+}
+
+@media (min-width: 375px) and (max-width: 1439px) {
+    .querytype {
+        flex-direction: column;
+    }
+
+    .names {
+        flex-direction: column;
+    }
+
+    .firstname h5 {
+        margin-bottom: 0rem;
+    }
+}
+
+@media (min-width: 1440px) {
+
+}
